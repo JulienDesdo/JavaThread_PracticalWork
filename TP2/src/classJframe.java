@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JMenu;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
+/* CECI EST UNE COMMENTAIRE */
 public class classJframe extends JFrame {
 
 	private classJpanel contentPane;
@@ -77,7 +77,7 @@ public class classJframe extends JFrame {
         		if (!contentPane.imagesLoaded()) {
                     JOptionPane.showMessageDialog(
                         classJframe.this,
-                        "L'image Builder Sign n'est pas chargée. Veuillez charger l'image avant de démarrer l'animation.",
+                        "L'image Builder Sign n'est pas chargï¿½e. Veuillez charger l'image avant de dï¿½marrer l'animation.",
                         "Erreur",
                         JOptionPane.WARNING_MESSAGE
                     );
@@ -89,7 +89,7 @@ public class classJframe extends JFrame {
                 }
         		if (!constructThread.isAlive()) {
                 	constructThread.start();
-                	contentPane.setConstructAnimationActive(true); // Activer l'animation, désactiver les clics
+                	contentPane.setConstructAnimationActive(true); // Activer l'animation, dï¿½sactiver les clics
                 }
         		contentPane.repaint();
         		
@@ -103,7 +103,7 @@ public class classJframe extends JFrame {
         		if (!contentPane.imagesLoaded()) {
                     JOptionPane.showMessageDialog(
                         classJframe.this,
-                        "L'image Loop n'est pas chargée. Veuillez charger l'image avant de démarrer l'animation.",
+                        "L'image Loop n'est pas chargï¿½e. Veuillez charger l'image avant de dï¿½marrer l'animation.",
                         "Erreur",
                         JOptionPane.WARNING_MESSAGE
                     );
@@ -128,7 +128,7 @@ public class classJframe extends JFrame {
         		if (!contentPane.imagesLoaded()) {
                     JOptionPane.showMessageDialog(
                         classJframe.this,
-                        "L'image Earth n'est pas chargée. Veuillez charger l'image avant de démarrer l'animation.",
+                        "L'image Earth n'est pas chargï¿½e. Veuillez charger l'image avant de dï¿½marrer l'animation.",
                         "Erreur",
                         JOptionPane.WARNING_MESSAGE
                     );
@@ -156,7 +156,7 @@ public class classJframe extends JFrame {
         		if (!contentPane.imagesLoaded()) {
                     JOptionPane.showMessageDialog(
                         classJframe.this,
-                        "L'image Builder Sign n'est pas chargée. Il n'y a pas d'animation à arrêter.",
+                        "L'image Builder Sign n'est pas chargï¿½e. Il n'y a pas d'animation ï¿½ arrï¿½ter.",
                         "Erreur",
                         JOptionPane.WARNING_MESSAGE
                     );
@@ -166,7 +166,7 @@ public class classJframe extends JFrame {
         		if (constructThread != null && constructThread.isAlive()) {
                     constructThread.interrupt();
                     constructThread = null;
-                    contentPane.setConstructAnimationActive(false); // Désactiver l'animation, activer les clics
+                    contentPane.setConstructAnimationActive(false); // Dï¿½sactiver l'animation, activer les clics
                 }
         		((classJpanel) contentPane).setCurrentImageIndex_construct(0);
         		contentPane.repaint();
@@ -180,7 +180,7 @@ public class classJframe extends JFrame {
         		if (!contentPane.imagesLoaded()) {
                     JOptionPane.showMessageDialog(
                         classJframe.this,
-                        "L'image Loop n'est pas chargée. Il n'y a pas d'animation à arrêter.",
+                        "L'image Loop n'est pas chargï¿½e. Il n'y a pas d'animation ï¿½ arrï¿½ter.",
                         "Erreur",
                         JOptionPane.WARNING_MESSAGE
                     );
@@ -205,7 +205,7 @@ public class classJframe extends JFrame {
         		if (!contentPane.imagesLoaded()) {
                     JOptionPane.showMessageDialog(
                         classJframe.this,
-                        "L'image Earth n'est pas chargée. Il n'y a pas d'animation à arrêter.",
+                        "L'image Earth n'est pas chargï¿½e. Il n'y a pas d'animation ï¿½ arrï¿½ter.",
                         "Erreur",
                         JOptionPane.WARNING_MESSAGE
                     );
@@ -230,7 +230,7 @@ public class classJframe extends JFrame {
                 JOptionPane.showMessageDialog(
                         null,
                         "Ceci est un panneau d'aide sympathique.\n" +
-                        "Vous pouvez ajouter plus de détails ici.",
+                        "Vous pouvez ajouter plus de dï¿½tails ici.",
                         "Aide",
                         JOptionPane.INFORMATION_MESSAGE
                     );
@@ -250,7 +250,7 @@ public class classJframe extends JFrame {
         contentPane = new classJpanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
-        setContentPane(contentPane);  // Définir le contentPane à partir de votre classJpanel
+        setContentPane(contentPane);  // Dï¿½finir le contentPane ï¿½ partir de votre classJpanel
         GroupLayout gl_contentPane = new GroupLayout(contentPane);
         gl_contentPane.setHorizontalGroup(
         	gl_contentPane.createParallelGroup(Alignment.LEADING)
