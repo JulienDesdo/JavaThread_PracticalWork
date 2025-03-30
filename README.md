@@ -11,7 +11,7 @@ Il propose une interface permettant de lancer, stopper ou interagir avec trois p
 L’interface graphique (via `JFrame` + `JPanel`) permet :
 
 - d’afficher 3 séries d’images différentes :
-  - 👷 "Builder Sign" (cliquable lorsque thread désactivé)
+  - 👷 "Builder Sign" 
   - 🔁 "Loop Panel"
   - 🌍 "Earth Picture"
 - de **lancer chaque animation** via un thread (`Thread.sleep` + `repaint`)
@@ -49,4 +49,4 @@ Les animations sont gérées par trois classes Java :
 
 ## 📷 Aperçu
 
-![IHM](./screenshot_gui.png)
+![IHM](./TP2/images/preview.png)
